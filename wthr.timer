@@ -1,0 +1,9 @@
+[Unit]
+Description=Run write_wttr hourly
+
+[Timer]
+OnCalendar=hourly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

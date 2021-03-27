@@ -1,0 +1,11 @@
+[Unit]
+Description=A weather service that writes current forecast to a text file
+
+[Service]
+Type=simple
+ExecStart=/home/vagrant/week11/write_wttr
+WorkingDirectory=/home/vagrant/week11
+Restart=on.failure
+
+[Install]
+WantedBy=multi-user.target
